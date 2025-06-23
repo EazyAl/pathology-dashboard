@@ -90,7 +90,7 @@ This project includes GitHub Actions workflows for automated testing and release
 ### Continuous Integration (`ci.yml`)
 - **Triggers**: Push to `main`/`develop` branches, pull requests to `main`
 - **Tests**: 
-  - Frontend compilation and linting (Next.js, TypeScript)
+  - Frontend compilation and TypeScript checking (Next.js)
   - API route testing
   - Rust compilation, formatting, and linting
   - Cross-platform Tauri builds (macOS, Linux, Windows)

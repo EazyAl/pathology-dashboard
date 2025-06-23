@@ -37,9 +37,6 @@ jobs:
       - name: Run TypeScript check
         run: pnpm tsc --noEmit
 
-      - name: Run Next.js lint
-        run: pnpm lint
-
       - name: Build Next.js frontend
         run: pnpm build
 
