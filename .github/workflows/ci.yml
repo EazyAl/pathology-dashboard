@@ -74,10 +74,11 @@ jobs:
           
           # Test basic API endpoint
           echo "Testing basic API endpoint..."
-          response=$(curl -s -w "%{http_code}" http://localhost:3000/api/cases/)
+          response=$(curl -s -L -w "%{http_code}" http://localhost:3000/api/cases)
           status_code="${response: -3}"
           if [ "$status_code" != "200" ]; then
             echo "❌ Basic API test failed with status: $status_code"
+            echo "Response: ${response%???}"
             kill $NEXT_PID 2>/dev/null || true
             exit 1
           fi
@@ -85,10 +86,11 @@ jobs:
           
           # Test search functionality
           echo "Testing case search..."
-          response=$(curl -s -w "%{http_code}" "http://localhost:3000/api/cases/?caseId=1")
+          response=$(curl -s -L -w "%{http_code}" "http://localhost:3000/api/cases?caseId=1")
           status_code="${response: -3}"
           if [ "$status_code" != "200" ]; then
             echo "❌ Case search test failed with status: $status_code"
+            echo "Response: ${response%???}"
             kill $NEXT_PID 2>/dev/null || true
             exit 1
           fi
@@ -96,10 +98,11 @@ jobs:
           
           # Test search with multiple results
           echo "Testing multiple results search..."
-          response=$(curl -s -w "%{http_code}" "http://localhost:3000/api/cases/?caseId=9")
+          response=$(curl -s -L -w "%{http_code}" "http://localhost:3000/api/cases?caseId=9")
           status_code="${response: -3}"
           if [ "$status_code" != "200" ]; then
             echo "❌ Multiple results test failed with status: $status_code"
+            echo "Response: ${response%???}"
             kill $NEXT_PID 2>/dev/null || true
             exit 1
           fi
@@ -107,10 +110,11 @@ jobs:
           
           # Test non-existent case (should return 404)
           echo "Testing non-existent case..."
-          response=$(curl -s -w "%{http_code}" "http://localhost:3000/api/cases/?caseId=999")
+          response=$(curl -s -L -w "%{http_code}" "http://localhost:3000/api/cases?caseId=999")
           status_code="${response: -3}"
           if [ "$status_code" != "404" ]; then
             echo "❌ Non-existent case test failed - expected 404, got: $status_code"
+            echo "Response: ${response%???}"
             kill $NEXT_PID 2>/dev/null || true
             exit 1
           fi
@@ -118,10 +122,11 @@ jobs:
           
           # Test invalid input (should return 400)
           echo "Testing invalid input..."
-          response=$(curl -s -w "%{http_code}" "http://localhost:3000/api/cases/?caseId=abc")
+          response=$(curl -s -L -w "%{http_code}" "http://localhost:3000/api/cases?caseId=abc")
           status_code="${response: -3}"
           if [ "$status_code" != "400" ]; then
             echo "❌ Invalid input test failed - expected 400, got: $status_code"
+            echo "Response: ${response%???}"
             kill $NEXT_PID 2>/dev/null || true
             exit 1
           fi
