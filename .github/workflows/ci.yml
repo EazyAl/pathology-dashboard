@@ -40,30 +40,60 @@ jobs:
       - name: Build Next.js frontend
         run: pnpm build
 
+  test-backend:
+    runs-on: ubuntu-latest
+    name: 'Test Backend (Next.js API)'
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'pnpm'
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Build Next.js
+        run: pnpm build
+
       - name: Test API routes
         run: |
-          # Start Next.js in background and test API
+          # Start Next.js in background
           pnpm start &
           sleep 10
-          # Test the API endpoint
-          curl -f http://localhost:3000/api/cases?caseId=1 || exit 1
+          
+          # Test basic API endpoint
+          echo "Testing basic API endpoint..."
+          curl -f http://localhost:3000/api/cases || exit 1
+          
+          # Test search functionality
+          echo "Testing case search..."
+          curl -f "http://localhost:3000/api/cases?caseId=1" || exit 1
+          curl -f "http://localhost:3000/api/cases?caseId=9" || exit 1
+          curl -f "http://localhost:3000/api/cases?caseId=10" || exit 1
+          
+          # Test edge cases
+          echo "Testing edge cases..."
+          curl -f "http://localhost:3000/api/cases?caseId=999" || exit 1
+          curl -f "http://localhost:3000/api/cases?caseId=abc" && exit 1 || echo "Invalid input correctly rejected"
+          
           # Kill the background process
           pkill -f "next start"
+          
+          echo "✅ All API tests passed!"
 
-  test-tauri:
-    strategy:
-      fail-fast: false
-      matrix:
-        include:
-          - platform: 'macos-latest'
-            args: '--target universal-apple-darwin'
-          - platform: 'ubuntu-latest'
-            args: ''
-          - platform: 'windows-latest'
-            args: ''
-
-    runs-on: ${{ matrix.platform }}
-    name: 'Test Tauri (${{ matrix.platform }})'
+  test-tauri-windows:
+    runs-on: windows-latest
+    name: 'Test Tauri (Windows)'
     
     steps:
       - name: Checkout repository
@@ -82,19 +112,11 @@ jobs:
 
       - name: Install Rust stable
         uses: dtolnay/rust-toolchain@stable
-        with:
-          targets: ${{ matrix.platform == 'macos-latest' && 'aarch64-apple-darwin,x86_64-apple-darwin' || '' }}
 
       - name: Rust cache
         uses: swatinem/rust-cache@v2
         with:
           workspaces: './src-tauri -> target'
-
-      - name: Install dependencies (ubuntu only)
-        if: matrix.platform == 'ubuntu-latest'
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y libgtk-3-dev libwebkit2gtk-4.1-dev libappindicator3-dev librsvg2-dev patchelf
 
       - name: Install frontend dependencies
         run: pnpm install --frozen-lockfile
@@ -111,20 +133,19 @@ jobs:
       - name: Run Rust tests
         run: cargo test --manifest-path ./src-tauri/Cargo.toml
 
-      - name: Build Tauri app
+      - name: Build Tauri app for Windows
         uses: tauri-apps/tauri-action@v0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          args: ${{ matrix.args }}
           # Don't upload to release, just build
           includeRelease: false
           includeDebug: false
 
   integration-test:
-    runs-on: ubuntu-latest
-    name: 'Integration Test'
-    needs: [test-frontend, test-tauri]
+    runs-on: windows-latest
+    name: 'Integration Test (Windows)'
+    needs: [test-frontend, test-backend, test-tauri-windows]
     
     steps:
       - name: Checkout repository
@@ -149,21 +170,41 @@ jobs:
         with:
           workspaces: './src-tauri -> target'
 
-      - name: Install dependencies (ubuntu only)
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y libgtk-3-dev libwebkit2gtk-4.1-dev libappindicator3-dev librsvg2-dev patchelf
-
-      - name: Install frontend dependencies
+      - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: Build and test complete app
+      - name: Full integration test
         run: |
           # Build frontend
+          echo "Building frontend..."
           pnpm build
           
           # Test that Tauri can compile with the built frontend
+          echo "Testing Tauri compilation..."
           cd src-tauri
           cargo build --release
+          cd ..
           
-          echo "✅ Integration test passed - both frontend and Tauri compile successfully" 
+          # Start Next.js and test API in background
+          echo "Testing frontend-backend integration..."
+          pnpm start &
+          Start-Sleep -Seconds 10
+          
+          # Test API integration
+          try {
+            $response = Invoke-WebRequest -Uri "http://localhost:3000/api/cases?caseId=1" -UseBasicParsing
+            if ($response.StatusCode -eq 200) {
+              Write-Host "✅ API integration test passed"
+            } else {
+              Write-Host "❌ API integration test failed"
+              exit 1
+            }
+          } catch {
+            Write-Host "❌ API integration test failed: $_"
+            exit 1
+          } finally {
+            # Kill the background process
+            Stop-Process -Name "node" -Force -ErrorAction SilentlyContinue
+          }
+          
+          echo "✅ Full integration test passed - Tauri + Next.js + API working on Windows" 

@@ -90,16 +90,15 @@ This project includes GitHub Actions workflows for automated testing and release
 ### Continuous Integration (`ci.yml`)
 - **Triggers**: Push to `main`/`develop` branches, pull requests to `main`
 - **Tests**: 
-  - Frontend compilation and TypeScript checking (Next.js)
-  - API route testing
-  - Rust compilation, formatting, and linting
-  - Cross-platform Tauri builds (macOS, Linux, Windows)
-  - Integration testing
+  - **Frontend**: Next.js compilation and TypeScript checking
+  - **Backend**: API route testing with comprehensive endpoint validation
+  - **Tauri**: Windows-only Rust compilation, formatting, and linting
+  - **Integration**: Full stack testing on Windows (Tauri + Next.js + API)
 
 ### Release (`release.yml`)
 - **Triggers**: Push of version tags (e.g., `v1.0.0`)
-- **Actions**: Builds and publishes desktop app binaries for all platforms
-- **Output**: Draft GitHub release with downloadable installers
+- **Actions**: Builds and publishes Windows desktop app installer
+- **Output**: Draft GitHub release with downloadable `.msi` installer
 
 To create a release:
 ```bash
