@@ -26,28 +26,23 @@ export async function GET(request: NextRequest) {
     const { searchParams } = new URL(request.url)
     const caseId = searchParams.get('caseId')
 
-    // If caseId is provided, validate and find the specific case
     if (caseId) {
-      const caseIdNum = parseInt(caseId, 10)
-      
-      // Validate caseId is a valid number
-      if (isNaN(caseIdNum) || caseIdNum < 1) {
+      const searchStr = caseId.trim()
+      if (!/^[0-9]+$/.test(searchStr)) {
         return NextResponse.json(
-          { error: 'Invalid case ID. Please provide a valid positive number.' }, 
+          { error: 'Invalid case ID. Please enter a number.' },
           { status: 400 }
         )
       }
-
-      const foundCase = cases.find(c => c.caseId === caseIdNum)
-      
-      if (foundCase) {
-        return NextResponse.json(foundCase)
-      } else {
+      // Return all cases whose caseId starts with the search string
+      const matchingCases = cases.filter(c => c.caseId.toString().startsWith(searchStr))
+      if (matchingCases.length === 0) {
         return NextResponse.json(
-          { error: `Case ${caseIdNum} not found` }, 
+          { error: `No cases found starting with ${searchStr}` },
           { status: 404 }
         )
       }
+      return NextResponse.json(matchingCases)
     }
 
     // Return all cases if no caseId specified
