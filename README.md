@@ -33,7 +33,6 @@ Before running this application, make sure you have the following installed:
 
 ```bash
 git clone <https://github.com/EazyAl/pathology-dashboard>
-cd rainpath
 ```
 
 ### 2. Install Dependencies
