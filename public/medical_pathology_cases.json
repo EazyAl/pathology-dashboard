@@ -1,0 +1,1703 @@
+[
+  {
+    "caseId": 1,
+    "date": "2025-04-27",
+    "diagnosis": "Glioblastoma multiforme",
+    "comments": "Ki\u201167 proliferation index approximately 70%.",
+    "dataModalities": [
+      "H&E",
+      "Gross image"
+    ],
+    "tissueType": "Liver",
+    "specimenType": "Core biopsy",
+    "grade": 1,
+    "stage": "pT1",
+    "molecularMarkers": [
+      "ALK",
+      "EGFR"
+    ]
+  },
+  {
+    "caseId": 2,
+    "date": "2020-12-09",
+    "diagnosis": "Invasive ductal carcinoma",
+    "comments": "Adequate sampling confirmed; no residual tumor.",
+    "dataModalities": [
+      "IHC",
+      "FISH"
+    ],
+    "tissueType": "Breast",
+    "specimenType": "Core biopsy",
+    "grade": 1,
+    "stage": "pTis",
+    "molecularMarkers": [
+      "KRAS",
+      "PD-L1"
+    ]
+  },
+  {
+    "caseId": 3,
+    "date": "2020-11-21",
+    "diagnosis": "Invasive ductal carcinoma",
+    "comments": "Ki\u201167 proliferation index approximately 70%.",
+    "dataModalities": [
+      "H&E",
+      "Electron microscopy",
+      "Flow cytometry"
+    ],
+    "tissueType": "Brain",
+    "specimenType": "Biopsy",
+    "grade": 3,
+    "stage": "pT2",
+    "molecularMarkers": [
+      "BRAF"
+    ]
+  },
+  {
+    "caseId": 4,
+    "date": "2025-03-12",
+    "diagnosis": "Papillary thyroid carcinoma",
+    "comments": "Adequate sampling confirmed; no residual tumor.",
+    "dataModalities": [
+      "Molecular panel"
+    ],
+    "tissueType": "Breast",
+    "specimenType": "Bone marrow aspirate",
+    "grade": 2,
+    "stage": "pTX",
+    "molecularMarkers": [
+      "KRAS",
+      "BRAF"
+    ]
+  },
+  {
+    "caseId": 5,
+    "date": "2020-01-17",
+    "diagnosis": "Papillary thyroid carcinoma",
+    "comments": "Tumor shows necrosis exceeding 50% of area.",
+    "dataModalities": [
+      "FISH",
+      "Gross image",
+      "Frozen section"
+    ],
+    "tissueType": "Skin",
+    "specimenType": "Bone marrow aspirate",
+    "grade": 3,
+    "stage": "pT1",
+    "molecularMarkers": []
+  },
+  {
+    "caseId": 6,
+    "date": "2020-04-28",
+    "diagnosis": "Prostatic adenocarcinoma",
+    "comments": "Ki\u201167 proliferation index approximately 70%.",
+    "dataModalities": [
+      "H&E",
+      "Digital slide",
+      "Frozen section"
+    ],
+    "tissueType": "Thyroid",
+    "specimenType": "Cytology smear",
+    "grade": 1,
+    "stage": "pT1",
+    "molecularMarkers": [
+      "EGFR"
+    ]
+  },
+  {
+    "caseId": 7,
+    "date": "2021-08-19",
+    "diagnosis": "Colorectal adenocarcinoma",
+    "comments": "Ki\u201167 proliferation index approximately 70%.",
+    "dataModalities": [
+      "Electron microscopy",
+      "Molecular panel",
+      "FISH"
+    ],
+    "tissueType": "Uterus",
+    "specimenType": "Cytology smear",
+    "grade": 2,
+    "stage": "pT3",
+    "molecularMarkers": [
+      "BRAF"
+    ]
+  },
+  {
+    "caseId": 8,
+    "date": "2021-09-25",
+    "diagnosis": "Prostatic adenocarcinoma",
+    "comments": "Immunostain pattern supports diagnosis.",
+    "dataModalities": [
+      "H&E"
+    ],
+    "tissueType": "Skin",
+    "specimenType": "Biopsy",
+    "grade": 2,
+    "stage": "pTis",
+    "molecularMarkers": []
+  },
+  {
+    "caseId": 9,
+    "date": "2024-05-01",
+    "diagnosis": "Basal cell carcinoma",
+    "comments": "High mitotic index noted in hotspots.",
+    "dataModalities": [
+      "Molecular panel"
+    ],
+    "tissueType": "Blood",
+    "specimenType": "Cytology smear",
+    "grade": 2,
+    "stage": "pT3",
+    "molecularMarkers": [
+      "p53",
+      "ER",
+      "IDH1"
+    ]
+  },
+  {
+    "caseId": 10,
+    "date": "2025-02-03",
+    "diagnosis": "Glioblastoma multiforme",
+    "comments": "Adequate sampling confirmed; no residual tumor.",
+    "dataModalities": [
+      "FISH"
+    ],
+    "tissueType": "Prostate",
+    "specimenType": "Cytology smear",
+    "grade": 2,
+    "stage": "pT1",
+    "molecularMarkers": [
+      "PR",
+      "PD-L1"
+    ]
+  },
+  {
+    "caseId": 11,
+    "date": "2022-01-25",
+    "diagnosis": "Papillary thyroid carcinoma",
+    "comments": "Adequate sampling confirmed; no residual tumor.",
+    "dataModalities": [
+      "Flow cytometry",
+      "FISH"
+    ],
+    "tissueType": "Kidney",
+    "specimenType": "Cytology smear",
+    "grade": 2,
+    "stage": "pTX",
+    "molecularMarkers": [
+      "PD-L1"
+    ]
+  },
+  {
+    "caseId": 12,
+    "date": "2024-05-22",
+    "diagnosis": "Chronic lymphocytic leukemia",
+    "comments": "Tumor shows necrosis exceeding 50% of area.",
+    "dataModalities": [
+      "Digital slide",
+      "Molecular panel",
+      "H&E"
+    ],
+    "tissueType": "Breast",
+    "specimenType": "Resection",
+    "grade": 3,
+    "stage": "pT4b",
+    "molecularMarkers": [
+      "IDH1"
+    ]
+  },
+  {
+    "caseId": 13,
+    "date": "2021-04-09",
+    "diagnosis": "Prostatic adenocarcinoma",
+    "comments": "Molecular panel reveals KRAS mutation.",
+    "dataModalities": [
+      "Flow cytometry",
+      "H&E"
+    ],
+    "tissueType": "Blood",
+    "specimenType": "Resection",
+    "grade": 3,
+    "stage": "pT3",
+    "molecularMarkers": [
+      "KRAS",
+      "PR"
+    ]
+  },
+  {
+    "caseId": 14,
+    "date": "2021-06-16",
+    "diagnosis": "Endometrial hyperplasia (atypical)",
+    "comments": "Lymphovascular invasion identified on IHC.",
+    "dataModalities": [
+      "FISH",
+      "Electron microscopy",
+      "Cytology"
+    ],
+    "tissueType": "Lung",
+    "specimenType": "Core biopsy",
+    "grade": 1,
+    "stage": "pTis",
+    "molecularMarkers": [
+      "p53",
+      "HER2"
+    ]
+  },
+  {
+    "caseId": 15,
+    "date": "2023-10-26",
+    "diagnosis": "Invasive ductal carcinoma",
+    "comments": "Margins are negative for tumor involvement.",
+    "dataModalities": [
+      "Electron microscopy",
+      "Cytology",
+      "H&E"
+    ],
+    "tissueType": "Bone",
+    "specimenType": "Biopsy",
+    "grade": 3,
+    "stage": "pTis",
+    "molecularMarkers": [
+      "PD-L1"
+    ]
+  },
+  {
+    "caseId": 16,
+    "date": "2021-12-27",
+    "diagnosis": "Cutaneous melanoma",
+    "comments": "Lymphovascular invasion identified on IHC.",
+    "dataModalities": [
+      "Gross image",
+      "FISH",
+      "Flow cytometry"
+    ],
+    "tissueType": "Brain",
+    "specimenType": "Biopsy",
+    "grade": 3,
+    "stage": "pT1",
+    "molecularMarkers": []
+  },
+  {
+    "caseId": 17,
+    "date": "2025-03-11",
+    "diagnosis": "Invasive ductal carcinoma",
+    "comments": "Immunostain pattern supports diagnosis.",
+    "dataModalities": [
+      "Cytology",
+      "Electron microscopy",
+      "FISH"
+    ],
+    "tissueType": "Uterus",
+    "specimenType": "Resection",
+    "grade": 2,
+    "stage": "pT4b",
+    "molecularMarkers": [
+      "HER2",
+      "ER",
+      "p53"
+    ]
+  },
+  {
+    "caseId": 18,
+    "date": "2024-05-21",
+    "diagnosis": "Endometrial hyperplasia (atypical)",
+    "comments": "Tumor shows necrosis exceeding 50% of area.",
+    "dataModalities": [
+      "Gross image",
+      "FISH",
+      "Frozen section"
+    ],
+    "tissueType": "Colon",
+    "specimenType": "Biopsy",
+    "grade": 2,
+    "stage": "pT2",
+    "molecularMarkers": [
+      "IDH1"
+    ]
+  },
+  {
+    "caseId": 19,
+    "date": "2021-09-11",
+    "diagnosis": "Cutaneous melanoma",
+    "comments": "Adequate sampling confirmed; no residual tumor.",
+    "dataModalities": [
+      "IHC"
+    ],
+    "tissueType": "Uterus",
+    "specimenType": "Cytology smear",
+    "grade": 2,
+    "stage": "pTX",
+    "molecularMarkers": []
+  },
+  {
+    "caseId": 20,
+    "date": "2023-06-04",
+    "diagnosis": "Cutaneous melanoma",
+    "comments": "Molecular panel reveals KRAS mutation.",
+    "dataModalities": [
+      "Cytology"
+    ],
+    "tissueType": "Lung",
+    "specimenType": "Core biopsy",
+    "grade": 3,
+    "stage": "pT1",
+    "molecularMarkers": []
+  },
+  {
+    "caseId": 21,
+    "date": "2022-01-27",
+    "diagnosis": "Cutaneous melanoma",
+    "comments": "Immunostain pattern supports diagnosis.",
+    "dataModalities": [
+      "Gross image",
+      "Molecular panel"
+    ],
+    "tissueType": "Lung",
+    "specimenType": "Bone marrow aspirate",
+    "grade": 1,
+    "stage": "pT4a",
+    "molecularMarkers": [
+      "BRAF",
+      "ER",
+      "ALK"
+    ]
+  },
+  {
+    "caseId": 22,
+    "date": "2024-04-01",
+    "diagnosis": "Papillary thyroid carcinoma",
+    "comments": "Specimen shows chronic inflammatory background.",
+    "dataModalities": [
+      "Gross image",
+      "H&E"
+    ],
+    "tissueType": "Bone",
+    "specimenType": "Core biopsy",
+    "grade": 3,
+    "stage": "pTis",
+    "molecularMarkers": []
+  },
+  {
+    "caseId": 23,
+    "date": "2024-03-15",
+    "diagnosis": "Papillary thyroid carcinoma",
+    "comments": "Specimen shows chronic inflammatory background.",
+    "dataModalities": [
+      "IHC"
+    ],
+    "tissueType": "Skin",
+    "specimenType": "Biopsy",
+    "grade": 2,
+    "stage": "pT4b",
+    "molecularMarkers": []
+  },
+  {
+    "caseId": 24,
+    "date": "2021-10-08",
+    "diagnosis": "Glioblastoma multiforme",
+    "comments": "Perineural invasion present.",
+    "dataModalities": [
+      "Cytology",
+      "Electron microscopy"
+    ],
+    "tissueType": "Prostate",
+    "specimenType": "Resection",
+    "grade": 2,
+    "stage": "pT4a",
+    "molecularMarkers": [
+      "ER",
+      "p53",
+      "EGFR"
+    ]
+  },
+  {
+    "caseId": 25,
+    "date": "2021-06-19",
+    "diagnosis": "Cutaneous melanoma",
+    "comments": "Specimen shows chronic inflammatory background.",
+    "dataModalities": [
+      "H&E",
+      "Flow cytometry",
+      "Gross image"
+    ],
+    "tissueType": "Thyroid",
+    "specimenType": "Resection",
+    "grade": 2,
+    "stage": "pTis",
+    "molecularMarkers": []
+  },
+  {
+    "caseId": 26,
+    "date": "2022-12-14",
+    "diagnosis": "Invasive ductal carcinoma",
+    "comments": "Molecular panel reveals KRAS mutation.",
+    "dataModalities": [
+      "Flow cytometry"
+    ],
+    "tissueType": "Brain",
+    "specimenType": "Resection",
+    "grade": 2,
+    "stage": "pT4a",
+    "molecularMarkers": [
+      "EGFR"
+    ]
+  },
+  {
+    "caseId": 27,
+    "date": "2025-01-07",
+    "diagnosis": "Hepatocellular carcinoma",
+    "comments": "Tumor shows necrosis exceeding 50% of area.",
+    "dataModalities": [
+      "Molecular panel",
+      "Electron microscopy"
+    ],
+    "tissueType": "Brain",
+    "specimenType": "Resection",
+    "grade": 3,
+    "stage": "pT2",
+    "molecularMarkers": []
+  },
+  {
+    "caseId": 28,
+    "date": "2023-11-29",
+    "diagnosis": "Invasive ductal carcinoma",
+    "comments": "Ki\u201167 proliferation index approximately 70%.",
+    "dataModalities": [
+      "Digital slide",
+      "Electron microscopy"
+    ],
+    "tissueType": "Brain",
+    "specimenType": "Bone marrow aspirate",
+    "grade": 2,
+    "stage": "pT2",
+    "molecularMarkers": [
+      "BRAF",
+      "HER2"
+    ]
+  },
+  {
+    "caseId": 29,
+    "date": "2024-12-08",
+    "diagnosis": "Glioblastoma multiforme",
+    "comments": "Adequate sampling confirmed; no residual tumor.",
+    "dataModalities": [
+      "Molecular panel"
+    ],
+    "tissueType": "Colon",
+    "specimenType": "Bone marrow aspirate",
+    "grade": 3,
+    "stage": "pT4a",
+    "molecularMarkers": [
+      "PD-L1",
+      "HER2"
+    ]
+  },
+  {
+    "caseId": 30,
+    "date": "2025-02-12",
+    "diagnosis": "Chronic lymphocytic leukemia",
+    "comments": "Molecular panel reveals KRAS mutation.",
+    "dataModalities": [
+      "Frozen section"
+    ],
+    "tissueType": "Bone",
+    "specimenType": "Core biopsy",
+    "grade": 1,
+    "stage": "pTis",
+    "molecularMarkers": []
+  },
+  {
+    "caseId": 31,
+    "date": "2021-09-03",
+    "diagnosis": "Papillary thyroid carcinoma",
+    "comments": "High mitotic index noted in hotspots.",
+    "dataModalities": [
+      "H&E"
+    ],
+    "tissueType": "Breast",
+    "specimenType": "Core biopsy",
+    "grade": 3,
+    "stage": "pTX",
+    "molecularMarkers": [
+      "ER",
+      "EGFR"
+    ]
+  },
+  {
+    "caseId": 32,
+    "date": "2024-05-09",
+    "diagnosis": "Hepatocellular carcinoma",
+    "comments": "Adequate sampling confirmed; no residual tumor.",
+    "dataModalities": [
+      "Molecular panel",
+      "Flow cytometry",
+      "Cytology"
+    ],
+    "tissueType": "Thyroid",
+    "specimenType": "Resection",
+    "grade": 1,
+    "stage": "pT2",
+    "molecularMarkers": [
+      "PD-L1"
+    ]
+  },
+  {
+    "caseId": 33,
+    "date": "2022-03-25",
+    "diagnosis": "Basal cell carcinoma",
+    "comments": "High mitotic index noted in hotspots.",
+    "dataModalities": [
+      "Frozen section",
+      "FISH"
+    ],
+    "tissueType": "Prostate",
+    "specimenType": "Cytology smear",
+    "grade": 1,
+    "stage": "pTis",
+    "molecularMarkers": [
+      "p53",
+      "KRAS",
+      "IDH1"
+    ]
+  },
+  {
+    "caseId": 34,
+    "date": "2021-09-24",
+    "diagnosis": "Colorectal adenocarcinoma",
+    "comments": "Margins are negative for tumor involvement.",
+    "dataModalities": [
+      "Electron microscopy",
+      "Frozen section",
+      "Molecular panel"
+    ],
+    "tissueType": "Skin",
+    "specimenType": "Biopsy",
+    "grade": 1,
+    "stage": "pT1",
+    "molecularMarkers": []
+  },
+  {
+    "caseId": 35,
+    "date": "2025-02-22",
+    "diagnosis": "Hepatocellular carcinoma",
+    "comments": "Tumor shows necrosis exceeding 50% of area.",
+    "dataModalities": [
+      "Frozen section"
+    ],
+    "tissueType": "Skin",
+    "specimenType": "Resection",
+    "grade": 2,
+    "stage": "pT1",
+    "molecularMarkers": [
+      "KRAS"
+    ]
+  },
+  {
+    "caseId": 36,
+    "date": "2024-04-27",
+    "diagnosis": "Colorectal adenocarcinoma",
+    "comments": "Margins are negative for tumor involvement.",
+    "dataModalities": [
+      "Molecular panel",
+      "H&E"
+    ],
+    "tissueType": "Breast",
+    "specimenType": "Bone marrow aspirate",
+    "grade": 2,
+    "stage": "pT4b",
+    "molecularMarkers": [
+      "p53"
+    ]
+  },
+  {
+    "caseId": 37,
+    "date": "2024-06-04",
+    "diagnosis": "Colorectal adenocarcinoma",
+    "comments": "Margins are negative for tumor involvement.",
+    "dataModalities": [
+      "Molecular panel",
+      "Flow cytometry"
+    ],
+    "tissueType": "Blood",
+    "specimenType": "Biopsy",
+    "grade": 1,
+    "stage": "pT4b",
+    "molecularMarkers": [
+      "p53",
+      "PR",
+      "HER2"
+    ]
+  },
+  {
+    "caseId": 38,
+    "date": "2020-06-22",
+    "diagnosis": "Prostatic adenocarcinoma",
+    "comments": "Ki\u201167 proliferation index approximately 70%.",
+    "dataModalities": [
+      "Electron microscopy",
+      "IHC"
+    ],
+    "tissueType": "Uterus",
+    "specimenType": "Cytology smear",
+    "grade": 3,
+    "stage": "pT1",
+    "molecularMarkers": []
+  },
+  {
+    "caseId": 39,
+    "date": "2020-09-25",
+    "diagnosis": "Papillary thyroid carcinoma",
+    "comments": "Lymphovascular invasion identified on IHC.",
+    "dataModalities": [
+      "Frozen section",
+      "IHC"
+    ],
+    "tissueType": "Skin",
+    "specimenType": "Biopsy",
+    "grade": 1,
+    "stage": "pTX",
+    "molecularMarkers": []
+  },
+  {
+    "caseId": 40,
+    "date": "2024-08-28",
+    "diagnosis": "Glioblastoma multiforme",
+    "comments": "Specimen shows chronic inflammatory background.",
+    "dataModalities": [
+      "Cytology"
+    ],
+    "tissueType": "Blood",
+    "specimenType": "Core biopsy",
+    "grade": 2,
+    "stage": "pTX",
+    "molecularMarkers": []
+  },
+  {
+    "caseId": 41,
+    "date": "2024-09-09",
+    "diagnosis": "Invasive ductal carcinoma",
+    "comments": "Adequate sampling confirmed; no residual tumor.",
+    "dataModalities": [
+      "Frozen section"
+    ],
+    "tissueType": "Uterus",
+    "specimenType": "Bone marrow aspirate",
+    "grade": 3,
+    "stage": "pT1",
+    "molecularMarkers": [
+      "IDH1",
+      "HER2"
+    ]
+  },
+  {
+    "caseId": 42,
+    "date": "2022-11-08",
+    "diagnosis": "Papillary thyroid carcinoma",
+    "comments": "Lymphovascular invasion identified on IHC.",
+    "dataModalities": [
+      "FISH"
+    ],
+    "tissueType": "Prostate",
+    "specimenType": "Core biopsy",
+    "grade": 1,
+    "stage": "pT2",
+    "molecularMarkers": [
+      "HER2",
+      "ER"
+    ]
+  },
+  {
+    "caseId": 43,
+    "date": "2025-05-07",
+    "diagnosis": "Glioblastoma multiforme",
+    "comments": "Ki\u201167 proliferation index approximately 70%.",
+    "dataModalities": [
+      "FISH",
+      "Electron microscopy"
+    ],
+    "tissueType": "Liver",
+    "specimenType": "Core biopsy",
+    "grade": 1,
+    "stage": "pT1",
+    "molecularMarkers": [
+      "PD-L1",
+      "PR",
+      "EGFR"
+    ]
+  },
+  {
+    "caseId": 44,
+    "date": "2021-10-05",
+    "diagnosis": "Prostatic adenocarcinoma",
+    "comments": "Perineural invasion present.",
+    "dataModalities": [
+      "Digital slide"
+    ],
+    "tissueType": "Liver",
+    "specimenType": "Core biopsy",
+    "grade": 2,
+    "stage": "pT2",
+    "molecularMarkers": [
+      "HER2",
+      "EGFR",
+      "p53"
+    ]
+  },
+  {
+    "caseId": 45,
+    "date": "2025-03-11",
+    "diagnosis": "Cutaneous melanoma",
+    "comments": "Tumor shows necrosis exceeding 50% of area.",
+    "dataModalities": [
+      "FISH"
+    ],
+    "tissueType": "Prostate",
+    "specimenType": "Biopsy",
+    "grade": 3,
+    "stage": "pT3",
+    "molecularMarkers": [
+      "ALK",
+      "PD-L1",
+      "KRAS"
+    ]
+  },
+  {
+    "caseId": 46,
+    "date": "2020-04-23",
+    "diagnosis": "Colorectal adenocarcinoma",
+    "comments": "Molecular panel reveals KRAS mutation.",
+    "dataModalities": [
+      "Cytology",
+      "IHC",
+      "Electron microscopy"
+    ],
+    "tissueType": "Lung",
+    "specimenType": "Bone marrow aspirate",
+    "grade": 2,
+    "stage": "pT2",
+    "molecularMarkers": []
+  },
+  {
+    "caseId": 47,
+    "date": "2022-03-14",
+    "diagnosis": "Endometrial hyperplasia (atypical)",
+    "comments": "Ki\u201167 proliferation index approximately 70%.",
+    "dataModalities": [
+      "Electron microscopy",
+      "Frozen section"
+    ],
+    "tissueType": "Lung",
+    "specimenType": "Cytology smear",
+    "grade": 1,
+    "stage": "pTX",
+    "molecularMarkers": []
+  },
+  {
+    "caseId": 48,
+    "date": "2021-06-26",
+    "diagnosis": "Papillary thyroid carcinoma",
+    "comments": "Specimen shows chronic inflammatory background.",
+    "dataModalities": [
+      "IHC",
+      "Digital slide"
+    ],
+    "tissueType": "Prostate",
+    "specimenType": "Biopsy",
+    "grade": 2,
+    "stage": "pT4b",
+    "molecularMarkers": [
+      "HER2",
+      "PD-L1"
+    ]
+  },
+  {
+    "caseId": 49,
+    "date": "2023-04-06",
+    "diagnosis": "Colorectal adenocarcinoma",
+    "comments": "Lymphovascular invasion identified on IHC.",
+    "dataModalities": [
+      "Molecular panel"
+    ],
+    "tissueType": "Bone",
+    "specimenType": "Cytology smear",
+    "grade": 1,
+    "stage": "pTX",
+    "molecularMarkers": [
+      "PD-L1"
+    ]
+  },
+  {
+    "caseId": 50,
+    "date": "2022-08-29",
+    "diagnosis": "Endometrial hyperplasia (atypical)",
+    "comments": "Adequate sampling confirmed; no residual tumor.",
+    "dataModalities": [
+      "IHC",
+      "H&E",
+      "FISH"
+    ],
+    "tissueType": "Blood",
+    "specimenType": "Core biopsy",
+    "grade": 1,
+    "stage": "pT4b",
+    "molecularMarkers": []
+  },
+  {
+    "caseId": 51,
+    "date": "2022-02-20",
+    "diagnosis": "Colorectal adenocarcinoma",
+    "comments": "High mitotic index noted in hotspots.",
+    "dataModalities": [
+      "H&E"
+    ],
+    "tissueType": "Uterus",
+    "specimenType": "Cytology smear",
+    "grade": 3,
+    "stage": "pT2",
+    "molecularMarkers": [
+      "PR"
+    ]
+  },
+  {
+    "caseId": 52,
+    "date": "2022-01-24",
+    "diagnosis": "Basal cell carcinoma",
+    "comments": "Specimen shows chronic inflammatory background.",
+    "dataModalities": [
+      "Frozen section",
+      "Gross image",
+      "Cytology"
+    ],
+    "tissueType": "Bone",
+    "specimenType": "Bone marrow aspirate",
+    "grade": 2,
+    "stage": "pT2",
+    "molecularMarkers": []
+  },
+  {
+    "caseId": 53,
+    "date": "2023-01-06",
+    "diagnosis": "Glioblastoma multiforme",
+    "comments": "Adequate sampling confirmed; no residual tumor.",
+    "dataModalities": [
+      "Frozen section",
+      "FISH"
+    ],
+    "tissueType": "Brain",
+    "specimenType": "Core biopsy",
+    "grade": 3,
+    "stage": "pT4b",
+    "molecularMarkers": [
+      "HER2",
+      "IDH1",
+      "ER"
+    ]
+  },
+  {
+    "caseId": 54,
+    "date": "2022-02-10",
+    "diagnosis": "Cutaneous melanoma",
+    "comments": "High mitotic index noted in hotspots.",
+    "dataModalities": [
+      "Flow cytometry",
+      "Digital slide"
+    ],
+    "tissueType": "Kidney",
+    "specimenType": "Biopsy",
+    "grade": 1,
+    "stage": "pT4a",
+    "molecularMarkers": [
+      "ALK"
+    ]
+  },
+  {
+    "caseId": 55,
+    "date": "2023-01-02",
+    "diagnosis": "Papillary thyroid carcinoma",
+    "comments": "Specimen shows chronic inflammatory background.",
+    "dataModalities": [
+      "H&E"
+    ],
+    "tissueType": "Skin",
+    "specimenType": "Resection",
+    "grade": 3,
+    "stage": "pTX",
+    "molecularMarkers": []
+  },
+  {
+    "caseId": 56,
+    "date": "2024-01-02",
+    "diagnosis": "Endometrial hyperplasia (atypical)",
+    "comments": "Perineural invasion present.",
+    "dataModalities": [
+      "IHC"
+    ],
+    "tissueType": "Skin",
+    "specimenType": "Biopsy",
+    "grade": 3,
+    "stage": "pT4a",
+    "molecularMarkers": [
+      "p53",
+      "PR"
+    ]
+  },
+  {
+    "caseId": 57,
+    "date": "2022-01-20",
+    "diagnosis": "Cutaneous melanoma",
+    "comments": "Ki\u201167 proliferation index approximately 70%.",
+    "dataModalities": [
+      "Gross image"
+    ],
+    "tissueType": "Colon",
+    "specimenType": "Bone marrow aspirate",
+    "grade": 2,
+    "stage": "pT4b",
+    "molecularMarkers": [
+      "HER2",
+      "ALK"
+    ]
+  },
+  {
+    "caseId": 58,
+    "date": "2023-07-12",
+    "diagnosis": "Colorectal adenocarcinoma",
+    "comments": "Perineural invasion present.",
+    "dataModalities": [
+      "Molecular panel",
+      "H&E",
+      "IHC"
+    ],
+    "tissueType": "Kidney",
+    "specimenType": "Bone marrow aspirate",
+    "grade": 3,
+    "stage": "pT1",
+    "molecularMarkers": []
+  },
+  {
+    "caseId": 59,
+    "date": "2021-06-27",
+    "diagnosis": "Prostatic adenocarcinoma",
+    "comments": "High mitotic index noted in hotspots.",
+    "dataModalities": [
+      "Flow cytometry",
+      "Gross image",
+      "Frozen section"
+    ],
+    "tissueType": "Brain",
+    "specimenType": "Biopsy",
+    "grade": 2,
+    "stage": "pT4b",
+    "molecularMarkers": [
+      "BRAF"
+    ]
+  },
+  {
+    "caseId": 60,
+    "date": "2020-11-11",
+    "diagnosis": "Endometrial hyperplasia (atypical)",
+    "comments": "Tumor shows necrosis exceeding 50% of area.",
+    "dataModalities": [
+      "Cytology",
+      "Flow cytometry",
+      "H&E"
+    ],
+    "tissueType": "Liver",
+    "specimenType": "Resection",
+    "grade": 2,
+    "stage": "pTX",
+    "molecularMarkers": [
+      "BRAF",
+      "HER2"
+    ]
+  },
+  {
+    "caseId": 61,
+    "date": "2021-05-04",
+    "diagnosis": "Invasive ductal carcinoma",
+    "comments": "Molecular panel reveals KRAS mutation.",
+    "dataModalities": [
+      "Gross image",
+      "Molecular panel",
+      "Cytology"
+    ],
+    "tissueType": "Breast",
+    "specimenType": "Bone marrow aspirate",
+    "grade": 2,
+    "stage": "pTis",
+    "molecularMarkers": [
+      "KRAS",
+      "p53"
+    ]
+  },
+  {
+    "caseId": 62,
+    "date": "2022-09-26",
+    "diagnosis": "Colorectal adenocarcinoma",
+    "comments": "Ki\u201167 proliferation index approximately 70%.",
+    "dataModalities": [
+      "Digital slide",
+      "Frozen section",
+      "Gross image"
+    ],
+    "tissueType": "Bone",
+    "specimenType": "Bone marrow aspirate",
+    "grade": 3,
+    "stage": "pT4b",
+    "molecularMarkers": [
+      "PR"
+    ]
+  },
+  {
+    "caseId": 63,
+    "date": "2023-08-22",
+    "diagnosis": "Papillary thyroid carcinoma",
+    "comments": "Perineural invasion present.",
+    "dataModalities": [
+      "Gross image"
+    ],
+    "tissueType": "Kidney",
+    "specimenType": "Core biopsy",
+    "grade": 1,
+    "stage": "pT2",
+    "molecularMarkers": []
+  },
+  {
+    "caseId": 64,
+    "date": "2021-11-03",
+    "diagnosis": "Cutaneous melanoma",
+    "comments": "High mitotic index noted in hotspots.",
+    "dataModalities": [
+      "Frozen section",
+      "Gross image",
+      "Flow cytometry"
+    ],
+    "tissueType": "Colon",
+    "specimenType": "Core biopsy",
+    "grade": 2,
+    "stage": "pT4a",
+    "molecularMarkers": [
+      "PD-L1"
+    ]
+  },
+  {
+    "caseId": 65,
+    "date": "2020-01-27",
+    "diagnosis": "Invasive ductal carcinoma",
+    "comments": "Lymphovascular invasion identified on IHC.",
+    "dataModalities": [
+      "Frozen section",
+      "H&E",
+      "Digital slide"
+    ],
+    "tissueType": "Kidney",
+    "specimenType": "Biopsy",
+    "grade": 2,
+    "stage": "pT4a",
+    "molecularMarkers": [
+      "BRAF",
+      "PD-L1",
+      "HER2"
+    ]
+  },
+  {
+    "caseId": 66,
+    "date": "2021-10-29",
+    "diagnosis": "Basal cell carcinoma",
+    "comments": "High mitotic index noted in hotspots.",
+    "dataModalities": [
+      "Electron microscopy",
+      "Digital slide"
+    ],
+    "tissueType": "Blood",
+    "specimenType": "Resection",
+    "grade": 3,
+    "stage": "pT2",
+    "molecularMarkers": [
+      "PR"
+    ]
+  },
+  {
+    "caseId": 67,
+    "date": "2025-04-17",
+    "diagnosis": "Cutaneous melanoma",
+    "comments": "High mitotic index noted in hotspots.",
+    "dataModalities": [
+      "Molecular panel",
+      "IHC"
+    ],
+    "tissueType": "Blood",
+    "specimenType": "Biopsy",
+    "grade": 1,
+    "stage": "pT4a",
+    "molecularMarkers": [
+      "PR",
+      "KRAS",
+      "ALK"
+    ]
+  },
+  {
+    "caseId": 68,
+    "date": "2020-08-01",
+    "diagnosis": "Prostatic adenocarcinoma",
+    "comments": "Margins are negative for tumor involvement.",
+    "dataModalities": [
+      "Cytology"
+    ],
+    "tissueType": "Breast",
+    "specimenType": "Biopsy",
+    "grade": 3,
+    "stage": "pT4a",
+    "molecularMarkers": [
+      "EGFR",
+      "PD-L1"
+    ]
+  },
+  {
+    "caseId": 69,
+    "date": "2022-07-20",
+    "diagnosis": "Colorectal adenocarcinoma",
+    "comments": "Specimen shows chronic inflammatory background.",
+    "dataModalities": [
+      "Digital slide"
+    ],
+    "tissueType": "Skin",
+    "specimenType": "Cytology smear",
+    "grade": 2,
+    "stage": "pTX",
+    "molecularMarkers": [
+      "ALK",
+      "ER"
+    ]
+  },
+  {
+    "caseId": 70,
+    "date": "2024-04-18",
+    "diagnosis": "Cutaneous melanoma",
+    "comments": "Lymphovascular invasion identified on IHC.",
+    "dataModalities": [
+      "H&E"
+    ],
+    "tissueType": "Breast",
+    "specimenType": "Biopsy",
+    "grade": 3,
+    "stage": "pTis",
+    "molecularMarkers": []
+  },
+  {
+    "caseId": 71,
+    "date": "2020-08-27",
+    "diagnosis": "Glioblastoma multiforme",
+    "comments": "Lymphovascular invasion identified on IHC.",
+    "dataModalities": [
+      "H&E"
+    ],
+    "tissueType": "Brain",
+    "specimenType": "Core biopsy",
+    "grade": 1,
+    "stage": "pT4a",
+    "molecularMarkers": [
+      "HER2",
+      "p53"
+    ]
+  },
+  {
+    "caseId": 72,
+    "date": "2021-05-31",
+    "diagnosis": "Colorectal adenocarcinoma",
+    "comments": "Specimen shows chronic inflammatory background.",
+    "dataModalities": [
+      "Electron microscopy",
+      "FISH",
+      "Flow cytometry"
+    ],
+    "tissueType": "Brain",
+    "specimenType": "Core biopsy",
+    "grade": 3,
+    "stage": "pTis",
+    "molecularMarkers": [
+      "PD-L1",
+      "ALK",
+      "EGFR"
+    ]
+  },
+  {
+    "caseId": 73,
+    "date": "2020-03-01",
+    "diagnosis": "Prostatic adenocarcinoma",
+    "comments": "Perineural invasion present.",
+    "dataModalities": [
+      "Flow cytometry",
+      "IHC"
+    ],
+    "tissueType": "Bone",
+    "specimenType": "Core biopsy",
+    "grade": 1,
+    "stage": "pT4a",
+    "molecularMarkers": []
+  },
+  {
+    "caseId": 74,
+    "date": "2020-07-27",
+    "diagnosis": "Glioblastoma multiforme",
+    "comments": "Immunostain pattern supports diagnosis.",
+    "dataModalities": [
+      "Digital slide"
+    ],
+    "tissueType": "Brain",
+    "specimenType": "Biopsy",
+    "grade": 1,
+    "stage": "pT4a",
+    "molecularMarkers": [
+      "HER2"
+    ]
+  },
+  {
+    "caseId": 75,
+    "date": "2021-09-27",
+    "diagnosis": "Prostatic adenocarcinoma",
+    "comments": "Perineural invasion present.",
+    "dataModalities": [
+      "Digital slide",
+      "Frozen section"
+    ],
+    "tissueType": "Kidney",
+    "specimenType": "Bone marrow aspirate",
+    "grade": 2,
+    "stage": "pTis",
+    "molecularMarkers": [
+      "p53"
+    ]
+  },
+  {
+    "caseId": 76,
+    "date": "2024-05-16",
+    "diagnosis": "Glioblastoma multiforme",
+    "comments": "Tumor shows necrosis exceeding 50% of area.",
+    "dataModalities": [
+      "FISH"
+    ],
+    "tissueType": "Kidney",
+    "specimenType": "Resection",
+    "grade": 3,
+    "stage": "pT4a",
+    "molecularMarkers": [
+      "BRAF",
+      "ER"
+    ]
+  },
+  {
+    "caseId": 77,
+    "date": "2020-04-27",
+    "diagnosis": "Invasive ductal carcinoma",
+    "comments": "Ki\u201167 proliferation index approximately 70%.",
+    "dataModalities": [
+      "IHC",
+      "Electron microscopy",
+      "Frozen section"
+    ],
+    "tissueType": "Blood",
+    "specimenType": "Resection",
+    "grade": 1,
+    "stage": "pT4b",
+    "molecularMarkers": [
+      "ER",
+      "KRAS",
+      "IDH1"
+    ]
+  },
+  {
+    "caseId": 78,
+    "date": "2023-04-29",
+    "diagnosis": "Hepatocellular carcinoma",
+    "comments": "Immunostain pattern supports diagnosis.",
+    "dataModalities": [
+      "Electron microscopy",
+      "Gross image"
+    ],
+    "tissueType": "Bone",
+    "specimenType": "Cytology smear",
+    "grade": 2,
+    "stage": "pT1",
+    "molecularMarkers": []
+  },
+  {
+    "caseId": 79,
+    "date": "2024-06-04",
+    "diagnosis": "Hepatocellular carcinoma",
+    "comments": "Margins are negative for tumor involvement.",
+    "dataModalities": [
+      "Frozen section"
+    ],
+    "tissueType": "Lung",
+    "specimenType": "Bone marrow aspirate",
+    "grade": 1,
+    "stage": "pT1",
+    "molecularMarkers": [
+      "ALK"
+    ]
+  },
+  {
+    "caseId": 80,
+    "date": "2023-11-29",
+    "diagnosis": "Prostatic adenocarcinoma",
+    "comments": "Lymphovascular invasion identified on IHC.",
+    "dataModalities": [
+      "Frozen section",
+      "Cytology"
+    ],
+    "tissueType": "Thyroid",
+    "specimenType": "Bone marrow aspirate",
+    "grade": 3,
+    "stage": "pTis",
+    "molecularMarkers": [
+      "HER2",
+      "KRAS",
+      "ALK"
+    ]
+  },
+  {
+    "caseId": 81,
+    "date": "2022-05-28",
+    "diagnosis": "Chronic lymphocytic leukemia",
+    "comments": "Tumor shows necrosis exceeding 50% of area.",
+    "dataModalities": [
+      "Digital slide"
+    ],
+    "tissueType": "Blood",
+    "specimenType": "Resection",
+    "grade": 3,
+    "stage": "pT1",
+    "molecularMarkers": [
+      "BRAF",
+      "PD-L1",
+      "ALK"
+    ]
+  },
+  {
+    "caseId": 82,
+    "date": "2025-02-04",
+    "diagnosis": "Cutaneous melanoma",
+    "comments": "Margins are negative for tumor involvement.",
+    "dataModalities": [
+      "Gross image",
+      "H&E"
+    ],
+    "tissueType": "Kidney",
+    "specimenType": "Biopsy",
+    "grade": 2,
+    "stage": "pT4b",
+    "molecularMarkers": [
+      "PR"
+    ]
+  },
+  {
+    "caseId": 83,
+    "date": "2020-07-02",
+    "diagnosis": "Cutaneous melanoma",
+    "comments": "Tumor shows necrosis exceeding 50% of area.",
+    "dataModalities": [
+      "IHC",
+      "Molecular panel",
+      "Electron microscopy"
+    ],
+    "tissueType": "Kidney",
+    "specimenType": "Core biopsy",
+    "grade": 2,
+    "stage": "pT2",
+    "molecularMarkers": [
+      "IDH1",
+      "ALK",
+      "KRAS"
+    ]
+  },
+  {
+    "caseId": 84,
+    "date": "2023-11-10",
+    "diagnosis": "Chronic lymphocytic leukemia",
+    "comments": "High mitotic index noted in hotspots.",
+    "dataModalities": [
+      "Digital slide",
+      "Electron microscopy"
+    ],
+    "tissueType": "Thyroid",
+    "specimenType": "Core biopsy",
+    "grade": 3,
+    "stage": "pT2",
+    "molecularMarkers": [
+      "IDH1"
+    ]
+  },
+  {
+    "caseId": 85,
+    "date": "2025-02-01",
+    "diagnosis": "Colorectal adenocarcinoma",
+    "comments": "Margins are negative for tumor involvement.",
+    "dataModalities": [
+      "Cytology"
+    ],
+    "tissueType": "Colon",
+    "specimenType": "Bone marrow aspirate",
+    "grade": 3,
+    "stage": "pTX",
+    "molecularMarkers": [
+      "KRAS",
+      "PR"
+    ]
+  },
+  {
+    "caseId": 86,
+    "date": "2023-02-28",
+    "diagnosis": "Colorectal adenocarcinoma",
+    "comments": "Lymphovascular invasion identified on IHC.",
+    "dataModalities": [
+      "Cytology",
+      "IHC",
+      "Frozen section"
+    ],
+    "tissueType": "Blood",
+    "specimenType": "Core biopsy",
+    "grade": 3,
+    "stage": "pT4a",
+    "molecularMarkers": [
+      "BRAF",
+      "HER2"
+    ]
+  },
+  {
+    "caseId": 87,
+    "date": "2023-10-21",
+    "diagnosis": "Cutaneous melanoma",
+    "comments": "Immunostain pattern supports diagnosis.",
+    "dataModalities": [
+      "FISH"
+    ],
+    "tissueType": "Uterus",
+    "specimenType": "Core biopsy",
+    "grade": 1,
+    "stage": "pTis",
+    "molecularMarkers": []
+  },
+  {
+    "caseId": 88,
+    "date": "2024-09-03",
+    "diagnosis": "Basal cell carcinoma",
+    "comments": "Adequate sampling confirmed; no residual tumor.",
+    "dataModalities": [
+      "Electron microscopy"
+    ],
+    "tissueType": "Prostate",
+    "specimenType": "Bone marrow aspirate",
+    "grade": 3,
+    "stage": "pT3",
+    "molecularMarkers": []
+  },
+  {
+    "caseId": 89,
+    "date": "2023-08-25",
+    "diagnosis": "Colorectal adenocarcinoma",
+    "comments": "Margins are negative for tumor involvement.",
+    "dataModalities": [
+      "FISH",
+      "Cytology"
+    ],
+    "tissueType": "Uterus",
+    "specimenType": "Biopsy",
+    "grade": 2,
+    "stage": "pT1",
+    "molecularMarkers": [
+      "PD-L1"
+    ]
+  },
+  {
+    "caseId": 90,
+    "date": "2025-01-21",
+    "diagnosis": "Endometrial hyperplasia (atypical)",
+    "comments": "Specimen shows chronic inflammatory background.",
+    "dataModalities": [
+      "Electron microscopy",
+      "H&E"
+    ],
+    "tissueType": "Brain",
+    "specimenType": "Bone marrow aspirate",
+    "grade": 1,
+    "stage": "pT3",
+    "molecularMarkers": [
+      "PR"
+    ]
+  },
+  {
+    "caseId": 91,
+    "date": "2024-06-12",
+    "diagnosis": "Papillary thyroid carcinoma",
+    "comments": "High mitotic index noted in hotspots.",
+    "dataModalities": [
+      "Digital slide",
+      "Electron microscopy",
+      "Cytology"
+    ],
+    "tissueType": "Brain",
+    "specimenType": "Cytology smear",
+    "grade": 1,
+    "stage": "pT1",
+    "molecularMarkers": [
+      "ALK"
+    ]
+  },
+  {
+    "caseId": 92,
+    "date": "2021-03-29",
+    "diagnosis": "Invasive ductal carcinoma",
+    "comments": "Perineural invasion present.",
+    "dataModalities": [
+      "H&E",
+      "Molecular panel"
+    ],
+    "tissueType": "Colon",
+    "specimenType": "Core biopsy",
+    "grade": 3,
+    "stage": "pTX",
+    "molecularMarkers": []
+  },
+  {
+    "caseId": 93,
+    "date": "2020-09-07",
+    "diagnosis": "Glioblastoma multiforme",
+    "comments": "Perineural invasion present.",
+    "dataModalities": [
+      "FISH"
+    ],
+    "tissueType": "Blood",
+    "specimenType": "Bone marrow aspirate",
+    "grade": 1,
+    "stage": "pT4a",
+    "molecularMarkers": [
+      "BRAF",
+      "ER",
+      "EGFR"
+    ]
+  },
+  {
+    "caseId": 94,
+    "date": "2021-07-11",
+    "diagnosis": "Prostatic adenocarcinoma",
+    "comments": "Lymphovascular invasion identified on IHC.",
+    "dataModalities": [
+      "IHC"
+    ],
+    "tissueType": "Uterus",
+    "specimenType": "Biopsy",
+    "grade": 2,
+    "stage": "pT2",
+    "molecularMarkers": [
+      "KRAS"
+    ]
+  },
+  {
+    "caseId": 95,
+    "date": "2020-03-26",
+    "diagnosis": "Endometrial hyperplasia (atypical)",
+    "comments": "Margins are negative for tumor involvement.",
+    "dataModalities": [
+      "IHC"
+    ],
+    "tissueType": "Thyroid",
+    "specimenType": "Bone marrow aspirate",
+    "grade": 3,
+    "stage": "pT2",
+    "molecularMarkers": [
+      "HER2"
+    ]
+  },
+  {
+    "caseId": 96,
+    "date": "2024-01-28",
+    "diagnosis": "Basal cell carcinoma",
+    "comments": "Specimen shows chronic inflammatory background.",
+    "dataModalities": [
+      "FISH",
+      "Molecular panel",
+      "Frozen section"
+    ],
+    "tissueType": "Uterus",
+    "specimenType": "Bone marrow aspirate",
+    "grade": 1,
+    "stage": "pT4a",
+    "molecularMarkers": [
+      "PR",
+      "PD-L1",
+      "BRAF"
+    ]
+  },
+  {
+    "caseId": 97,
+    "date": "2025-05-01",
+    "diagnosis": "Hepatocellular carcinoma",
+    "comments": "Margins are negative for tumor involvement.",
+    "dataModalities": [
+      "Gross image"
+    ],
+    "tissueType": "Thyroid",
+    "specimenType": "Cytology smear",
+    "grade": 1,
+    "stage": "pT4b",
+    "molecularMarkers": [
+      "ALK"
+    ]
+  },
+  {
+    "caseId": 98,
+    "date": "2022-03-29",
+    "diagnosis": "Papillary thyroid carcinoma",
+    "comments": "Ki\u201167 proliferation index approximately 70%.",
+    "dataModalities": [
+      "FISH",
+      "Cytology",
+      "Gross image"
+    ],
+    "tissueType": "Thyroid",
+    "specimenType": "Cytology smear",
+    "grade": 1,
+    "stage": "pTis",
+    "molecularMarkers": [
+      "IDH1",
+      "PR"
+    ]
+  },
+  {
+    "caseId": 99,
+    "date": "2022-07-07",
+    "diagnosis": "Prostatic adenocarcinoma",
+    "comments": "Adequate sampling confirmed; no residual tumor.",
+    "dataModalities": [
+      "Flow cytometry"
+    ],
+    "tissueType": "Bone",
+    "specimenType": "Bone marrow aspirate",
+    "grade": 3,
+    "stage": "pT4b",
+    "molecularMarkers": [
+      "PR",
+      "ER",
+      "EGFR"
+    ]
+  },
+  {
+    "caseId": 100,
+    "date": "2024-03-11",
+    "diagnosis": "Hepatocellular carcinoma",
+    "comments": "Tumor shows necrosis exceeding 50% of area.",
+    "dataModalities": [
+      "Cytology",
+      "Digital slide",
+      "Electron microscopy"
+    ],
+    "tissueType": "Kidney",
+    "specimenType": "Cytology smear",
+    "grade": 2,
+    "stage": "pT4b",
+    "molecularMarkers": [
+      "PD-L1"
+    ]
+  }
+]
