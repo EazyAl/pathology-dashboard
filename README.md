@@ -83,6 +83,30 @@ pnpm build
 pnpm start
 ```
 
+## 🔄 CI/CD
+
+This project includes GitHub Actions workflows for automated testing and releases:
+
+### Continuous Integration (`ci.yml`)
+- **Triggers**: Push to `main`/`develop` branches, pull requests to `main`
+- **Tests**: 
+  - Frontend compilation and linting (Next.js, TypeScript)
+  - API route testing
+  - Rust compilation, formatting, and linting
+  - Cross-platform Tauri builds (macOS, Linux, Windows)
+  - Integration testing
+
+### Release (`release.yml`)
+- **Triggers**: Push of version tags (e.g., `v1.0.0`)
+- **Actions**: Builds and publishes desktop app binaries for all platforms
+- **Output**: Draft GitHub release with downloadable installers
+
+To create a release:
+```bash
+git tag v1.0.0
+git push origin v1.0.0
+```
+
 ## 📝 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
