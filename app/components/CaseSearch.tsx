@@ -20,9 +20,11 @@ export default function CaseSearch() {
       setError('Please enter a valid number')
       return
     }
+    
     setLoading(true)
     setError('')
     setResults(null)
+    
     try {
       const response = await fetch(`/api/cases?caseId=${encodeURIComponent(trimmedCaseId)}`)
       if (!response.ok) {
@@ -33,18 +35,11 @@ export default function CaseSearch() {
       setResults(data)
       previousResults.current = data
     } catch (err) {
-      const errorMessage = err instanceof Error ? err.message : 'Failed to fetch case data'
-      setError(errorMessage)
+      setError(err instanceof Error ? err.message : 'Failed to fetch case data')
     } finally {
       setLoading(false)
     }
   }, [caseId])
-
-  const handleKeyPress = useCallback((e: React.KeyboardEvent) => {
-    if (e.key === 'Enter') {
-      searchCase()
-    }
-  }, [searchCase])
 
   const formatDate = useCallback((dateString: string) => {
     return new Date(dateString).toLocaleDateString('en-US', {
@@ -54,20 +49,11 @@ export default function CaseSearch() {
     })
   }, [])
 
-  // Handle card click (mouse or keyboard)
   const handleCardClick = (c: MedicalCase) => {
     previousResults.current = results
     setResults([c])
   }
-  const handleCardKeyDown = (e: React.KeyboardEvent, c: MedicalCase) => {
-    if (e.key === 'Enter' || e.key === ' ') {
-      e.preventDefault()
-      previousResults.current = results
-      setResults([c])
-    }
-  }
 
-  // Back button handler
   const handleBack = () => {
     if (previousResults.current) {
       setResults(previousResults.current)
@@ -77,13 +63,14 @@ export default function CaseSearch() {
   return (
     <div className="case-search-container">
       <h1>Medical Pathology Case Dashboard</h1>
+      
       <div className="search-section">
         <div className="search-input-group">
           <input
             type="number"
             value={caseId}
             onChange={(e) => setCaseId(e.target.value)}
-            onKeyPress={handleKeyPress}
+            onKeyPress={(e) => e.key === 'Enter' && searchCase()}
             placeholder="Enter Case ID (e.g. 9, 10, 99)"
             className="case-input"
             min="1"
@@ -109,11 +96,7 @@ export default function CaseSearch() {
             <div
               className="case-list-card clickable"
               key={c.caseId}
-              tabIndex={0}
-              role="button"
-              aria-label={`View details for case ${c.caseId}`}
               onClick={() => handleCardClick(c)}
-              onKeyDown={(e) => handleCardKeyDown(e, c)}
             >
               <div className="case-list-header">
                 <span className="case-list-id">#{c.caseId}</span>
