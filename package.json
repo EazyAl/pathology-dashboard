@@ -7,7 +7,14 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "tauri": "tauri"
+    "tauri": "tauri",
+    "test:e2e": "cd webdriver/selenium && pnpm test",
+    "test:e2e:watch": "cd webdriver/selenium && pnpm test:watch",
+    "test:e2e:debug": "cd webdriver/selenium && pnpm test:debug",
+    "test:playwright": "playwright test",
+    "test:playwright:ui": "playwright test --ui",
+    "test:playwright:headed": "playwright test --headed",
+    "test:playwright:debug": "playwright test --debug"
   },
   "dependencies": {
     "@tauri-apps/api": "^2.0.0",
@@ -16,10 +23,17 @@
     "react-dom": "^19.1.0"
   },
   "devDependencies": {
+    "@playwright/test": "^1.53.1",
     "@tauri-apps/cli": "^2.0.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^14.6.1",
     "@types/node": "24.0.3",
     "@types/react": "^18.3.1",
     "@types/react-dom": "^18.3.1",
-    "typescript": "^5.6.2"
+    "@vitejs/plugin-react": "^4.6.0",
+    "jsdom": "^26.1.0",
+    "typescript": "^5.6.2",
+    "vitest": "^3.2.4"
   }
 }

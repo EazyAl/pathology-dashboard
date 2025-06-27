@@ -189,10 +189,63 @@ jobs:
           includeRelease: false
           includeDebug: false
 
+  test-e2e-selenium:
+    runs-on: ubuntu-latest
+    name: 'E2E Tests (Selenium)'
+    needs: [test-frontend, test-backend]
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'pnpm'
+
+      - name: Install Rust stable
+        uses: dtolnay/rust-toolchain@stable
+
+      - name: Rust cache
+        uses: swatinem/rust-cache@v2
+        with:
+          workspaces: './src-tauri -> target'
+
+      - name: Install Tauri Driver
+        run: cargo install tauri-driver
+
+      - name: Install dependencies
+        run: |
+          pnpm install --frozen-lockfile
+          cd webdriver/selenium && pnpm install
+
+      - name: Build application
+        run: |
+          pnpm build
+          cd src-tauri && cargo build --release
+
+      - name: Run Selenium E2E Tests
+        run: |
+          cd webdriver/selenium
+          pnpm test
+
+      - name: Upload test screenshots
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-screenshots
+          path: webdriver/selenium/test/screenshots/
+
   integration-test:
     runs-on: windows-latest
     name: 'Integration Test (Windows)'
-    needs: [test-frontend, test-backend, test-tauri-windows]
+    needs: [test-frontend, test-backend, test-tauri-windows, test-e2e-selenium]
     
     steps:
       - name: Checkout repository
