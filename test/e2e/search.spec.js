@@ -1,6 +1,6 @@
-const { Builder, By, until } = require('selenium-webdriver');
-const { expect } = require('chai');
-const chrome = require('selenium-webdriver/chrome');
+import { Builder, By, until } from 'selenium-webdriver';
+import { expect } from 'chai';
+import chrome from 'selenium-webdriver/chrome.js';
 
 describe('Rainpath Medical Dashboard E2E', function () {
   let driver;
