@@ -260,7 +260,7 @@ jobs:
             it('should load the web interface', async () => {
               await driver.get('http://localhost:3000');
               const title = await driver.getTitle();
-              expect(title).to.include('rainpath');
+              expect(title).to.include('Rainpath');
             });
 
             it('should have search input field', async () => {
