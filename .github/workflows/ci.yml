@@ -223,10 +223,13 @@ jobs:
           sleep 15
 
       - name: Install Chrome and ChromeDriver
+        uses: nanasess/setup-chromedriver@v2
+
+      - name: Start ChromeDriver
         run: |
-          sudo apt-get update
-          sudo apt-get install -y chromium-browser chromium-chromedriver
-          export PATH=$PATH:/usr/lib/chromium-browser
+          sudo chromedriver --url-base=/wd/hub &
+          sudo chmod 666 /dev/shm
+          sleep 5
 
       - name: Run Selenium Web Tests
         run: |
@@ -248,10 +251,12 @@ jobs:
               options.addArguments('--headless');
               options.addArguments('--no-sandbox');
               options.addArguments('--disable-dev-shm-usage');
+              options.addArguments('--disable-gpu');
               
               driver = await new Builder()
                 .forBrowser('chrome')
                 .setChromeOptions(options)
+                .usingServer('http://localhost:9515/wd/hub')
                 .build();
             });
 
@@ -322,6 +327,15 @@ jobs:
           
           # Run the web tests
           pnpm test test/web-interface.test.js
+
+      - name: Run Playwright Tests (Fallback)
+        if: failure()
+        run: |
+          # Install Playwright browsers
+          npx playwright install --with-deps chromium
+          
+          # Run Playwright tests
+          npx playwright test test/case-search.spec.ts --project=chromium
 
       - name: Upload test screenshots
         if: failure()
