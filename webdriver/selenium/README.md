@@ -178,6 +178,5 @@ If you need to test the actual Tauri desktop app:
 
 1. **Local Development**: Use `pnpm test:e2e` on macOS/Windows
 2. **CI/CD**: Consider using Windows runners for Tauri testing
-3. **Alternative**: Use Playwright for cross-platform testing
 
 The web interface testing provides excellent coverage of the core functionality while being much more reliable in CI/CD environments. 
