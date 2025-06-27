@@ -11,6 +11,7 @@
     "test:e2e": "cd webdriver/selenium && pnpm test",
     "test:e2e:watch": "cd webdriver/selenium && pnpm test:watch",
     "test:e2e:debug": "cd webdriver/selenium && pnpm test:debug",
+    "test:e2e:web": "cd webdriver/selenium && pnpm test test/web-interface.test.js",
     "test:playwright": "playwright test",
     "test:playwright:ui": "playwright test --ui",
     "test:playwright:headed": "playwright test --headed",
